@@ -31,10 +31,10 @@ export function Header({ user, url }: {
         {isHomepage ? <div></div> : (
           <a
             href="/"
-            class="group outline-none focus-visible:ring-2 ring-cyan-700"
+            class="group outline-none focus-visible:ring-2 ring-cyan-700 will-change-transform"
           >
             <span className="sr-only">JSR home</span>
-            <Logo class="h-[28px] flex-none group-hover:animate-rotate-180" />
+            <Logo class="h-[28px] flex-none group-hover:animate-rotate-180 transition-transform duration-[360ms] ease-[cubic-bezier(0.67,-0.33,0.28,1.28)]" />
           </a>
         )}
         <div class="hidden sm:block grow-1 flex-1">
